@@ -1,3 +1,4 @@
+#This package uses the functions from the webchecker package to create a function that sends different emails as a bus is approaching its stop.
 import smtplib, ssl, imaplib, time
 from webchecker import *
 
@@ -6,6 +7,12 @@ def mailer():
     r2 = ring2()
     r3 = ring3()
     r4 = ring4()
+    sender_email = #Put in an email in between quotation marks
+    password = #Put in its password in between quotation marks
+    port = 465
+    smtp_server = #Put in the smtp server
+    reciever_email = #Put in a recieving email for this program
+
 
 
     if r1 == True:

@@ -1,3 +1,4 @@
+#This package imports the time package and uses it to create functions that check if the bus is approaching the designated stop at a particular time.
 import requests
 from bs4 import BeautifulSoup
 from theTime import *
@@ -23,5 +24,3 @@ def ring3():
 def ring4():
     if t2 in str (html):
         return True
-
-

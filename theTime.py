@@ -1,8 +1,8 @@
+#This package returns the time 10,8,5 and 2 mins from now in different functions.
 from datetime import datetime
 
 def time10(x):
     currentDateAndTime = datetime.now()
-    currentTime = currentDateAndTime.strftime("%H:%M")
     Hours = currentDateAndTime.strftime("%H")
     Minutes = currentDateAndTime.strftime("%M")
     Minutes10 = int(Minutes) + 10
@@ -14,6 +14,7 @@ def time10(x):
         Hours += 1
         Hours = str(Hours)
         if int(Minutes10) < 10:
+            Minutes10 = str(Minutes10)
             Minutes10 = "0" + Minutes10
 
     Minutes10 = str(Minutes10)
@@ -23,7 +24,6 @@ def time10(x):
 
 def time8(x):
     currentDateAndTime = datetime.now()
-    currentTime = currentDateAndTime.strftime("%H:%M")
     Hours = currentDateAndTime.strftime("%H")
     Minutes = currentDateAndTime.strftime("%M")
     Minutes8 = int(Minutes) + 8
@@ -35,6 +35,7 @@ def time8(x):
         Hours += 1
         Hours = str(Hours)
         if int(Minutes8) < 10:
+            Minutes8 = str(Minutes8)
             Minutes8 = "0" + Minutes8
 
     Minutes8 = str(Minutes8)
@@ -44,7 +45,6 @@ def time8(x):
 
 def time5(x):
     currentDateAndTime = datetime.now()
-    currentTime = currentDateAndTime.strftime("%H:%M")
     Hours = currentDateAndTime.strftime("%H")
     Minutes = currentDateAndTime.strftime("%M")
     Minutes5 = int(Minutes) + 5
@@ -56,6 +56,7 @@ def time5(x):
         Hours += 1
         Hours = str(Hours)
         if int(Minutes5) < 5:
+            Minutes5 = str(Minutes5)
             Minutes5 = "0" + Minutes5
 
     Minutes5 = str(Minutes5)
@@ -65,7 +66,6 @@ def time5(x):
 
 def time2(x):
     currentDateAndTime = datetime.now()
-    currentTime = currentDateAndTime.strftime("%H:%M")
     Hours = currentDateAndTime.strftime("%H")
     Minutes = currentDateAndTime.strftime("%M")
     Minutes2 = int(Minutes) + 2
@@ -83,12 +83,3 @@ def time2(x):
     FinalRing = Hours + ":" + Minutes2
     if x == "FinalRing":
         return FinalRing
-
-
-
-
-
-
-
-
-
